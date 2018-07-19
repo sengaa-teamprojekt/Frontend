@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 	<!-- Site Properities -->
-	<title>Sengaa-Login</title>
+	<title>Sengaa-Registrierung</title>
 
 	<link href='fonts/googlefont.css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/semantic.css">
@@ -25,35 +25,45 @@
 	</img>
 </div>
 
-<div class="ui page grid overview">
+<h1 class="ui header center aligned">Herzlich Willkommen auf der sengaa-Partnerseite!</h1>
+<h3 class="ui header center aligned">Sie haben hier die Möglichkeit schnell und einfach sengaa-Dienstleistungen zu buchen.</h3>
 
+<div class="ui page grid overview">
+<div class="ui form">
 	<div class="ui two wide column"></div>
-	<div class="twelve wide column">
-		<div class="ui two column center aligned stackable divided grid">
+		<div class="ui two column middle center aligned stackable grid">
 			<div class="column">
 				<img src="images/iphone.png">
 				</img>
 			</div>
 			<div class="column">
-				<p class="ueberschriftLogin">Anmeldung</p>
-				<p class="uebrschriftLogin2">Willkommen bei Sengaa!</p>
-				<br/>
-				<br/>
+				<h1 class="ui header">Registrierung</h1>
 				<div class="field">
-					<label>Input</label>
-					<input type="text">
+					<input type="text" placeholder="Unternehmen">
 				</div>
+				<div class="field">
+					<input type="text" placeholder="Ansprechpartner">
+				</div>
+				<div class="field">
+					<input type="text" placeholder="E-Mail">
+				</div>
+				<div class="field">
+					<input type="password" placeholder="Passwort">
+				</div>
+				<div class="required inline field">
+		      <div class="ui checkbox">
+		        <input type="checkbox">
+		        <label>Ich stimme den AGBs zu.</label>
+		      </div>
+					<br/>
+					<br/>
+				<p><a class="ui sengaacolor right labeled icon button" href="#">Registrieren<i class="right long arrow icon"></i></a></p>
 				<br/>
 				<br/>
-				<input type="password" name="passwort" value="Passwort"/>
-				<br/>
-				<br/>
-				<br/>
-				<p><a class="ui sengaacolor right labeled icon button" href="#">Anmelden <i class="right long arrow icon"></i></a></p>
+				<p><a class="ui grey button" href="#">Schon angemeldet?</a></p>
 			</div>
 		</div>
 	</div>
-
 </body>
 
 </html>
