@@ -25,10 +25,49 @@
 	</img>
 </div>
 
-<p><a class="ui grey right labeled icon right floated aligned button" href="../login/login.html" onClick="deleteAllCookies()">Abmelden <i class="right long arrow icon"></i></a></p>
 
-<h1 class="ui center aligned header">Was möchten Sie anlegen?</h1>
+<div class="ui five item inverted menu">
+  <a href="../overview/overview.html" class="active item">Startseite</a>
+	<div class="ui dropdown item">Challenges
+		<i class="dropdown icon"></i>
+		<div class="menu">
+		<a href="#" class="item">Informationen</a>
+		<a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
+	</div>
+ </div>
+ <div class="ui dropdown item">Deals
+	 <i class="dropdown icon"></i>
+	 <div class="menu">
+	 <a href="#" class="item">Informationen</a>
+	 <a href="../deal/deal.html" class="item">Buchungsanfrage</a>
+ </div>
+ </div>
+ <div class="ui dropdown item">Events
+	 <i class="dropdown icon"></i>
+	 <div class="menu">
+	 <a href="#" class="item">Informationen</a>
+	 <a href="#" class="item">Buchungsanfrage</a>
+	 <a href="#" class="item">Vergangene Events</a>
+ </div>
+ </div>
+	<div class="ui dropdown item">Mein Konto
+		<i class="dropdown icon"></i>
+		<div class="menu">
+		<a href="../customeraccount/accountRO.html" class="item">Meine Kontodaten</a>
+		<a href="#" class="item">Meine Bestellungen</a>
+		<a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
+	</div>
+ </div>
+</div>
 
+
+	<div class="ui one column center aligned grid">
+		<div class="column">
+			<div class="ui icon header">
+				<h1>Welche Dienstleistung möchten Sie buchen?</h1>
+			</div>
+		</div>
+	</div>
 
 			<div class="ui page grid overview segment">
 
@@ -55,9 +94,8 @@
 				</div>
 			</div>
 		</div>
-
-		</div>
-	</div>
+</div>
 </body>
+<script src="js/overview_controller.js"></script>
 
 </html>
