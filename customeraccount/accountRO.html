@@ -20,49 +20,56 @@
 </head>
 <body id="home">
 
-<div class="ui page main menu large">
-	<img src="../images/Header.jpg" class="center">
-	</img>
-</div>
+	<!-- Header: Picture + Menu -->
+	<div class="ui page main menu large">
+	    <img src="../images/Header.jpg" class="center">
+	  	</img>
 
-<div class="ui five item inverted menu">
-  <a href="../overview/overview.html" class="item">Startseite</a>
-	<div class="ui dropdown item">Challenges
-		<i class="dropdown icon"></i>
-		<div class="menu">
-		<a href="#" class="item">Informationen</a>
-		<a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
-	</div>
- </div>
- <div class="ui dropdown item">Deals
-	 <i class="dropdown icon"></i>
-	 <div class="menu">
-	 <a href="#" class="item">Informationen</a>
-	 <a href="../deal/deal.html" class="item">Buchungsanfrage</a>
- </div>
- </div>
- <div class="ui dropdown item">Events
-	 <i class="dropdown icon"></i>
-	 <div class="menu">
-	 <a href="#" class="item">Informationen</a>
-	 <a href="#" class="item">Buchungsanfrage</a>
-	 <a href="#" class="item">Vergangene Events</a>
- </div>
- </div>
-	<div class="ui dropdown active item">Mein Konto
-		<i class="dropdown icon"></i>
-		<div class="menu">
-		<a href="../customeraccount/accountRO.html" class="active item">Meine Kontodaten</a>
-		<a href="#" class="item">Meine Bestellungen</a>
-		<a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
-	</div>
- </div>
-</div>
+	    <div class="ui six item inverted menu">
+				<div class="ui dropdown item" id="header_dd_start">Startseite
+	    		<i class="dropdown icon"></i>
+	    		<div class="menu">
+	    		<a href="../overview/overview.html" class="item">Start</a>
+	    		<a href="#" class="item">Über sengaa</a>
+					<a href="#" class="item">Kontakt</a>
+				</div>
+	     </div>
+			 <div class="ui dropdown item" id="header_dd_challenge">Challenges
+				 <i class="dropdown icon"></i>
+				 <div class="menu">
+				 <a href="#" class="item">Informationen</a>
+				 <a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
+			 </div>
+			</div>
+			<div class="ui dropdown item" id="header_dd_deal">Deals
+				<i class="dropdown icon"></i>
+				<div class="menu">
+				<a href="#" class="item">Informationen</a>
+				<a href="../deal/deal.html" class="item">Buchungsanfrage</a>
+			</div>
+			</div>
+			<div class="ui dropdown item" id="header_dd_event">Events
+				<i class="dropdown icon"></i>
+				<div class="menu">
+				<a href="#" class="item">Informationen</a>
+				<a href="#" class="item">Buchungsanfrage</a>
+				<a href="#" class="item">Vergangene Events</a>
+			</div>
+			</div>
+			 <div class="ui dropdown active item" id="header_dd_account">Mein Konto
+				 <i class="dropdown icon"></i>
+				 <div class="menu">
+				 <a href="../customeraccount/accountRO.html" class="active item">Meine Kontodaten</a>
+				 <a href="#" class="item">Meine Bestellungen</a>
+				 <a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
+			 </div>
+			</div>
+		 </div>
+	 </div>
 
-
+	<!-- Body: Content -->
  <div class="ui page grid">
 	 <div class="ui form">
-
 
 			<div class="ui one column center aligned grid">
 				<div class="column">
@@ -75,31 +82,38 @@
 	<div class="ui page grid overview segment">
 		<form class="ui form">
 
+
+
+
 				<div class="ui two column grid">
+					<div class="row">
+						<div class="column">
+						</div>
+						<div class="column">
+								<p><a class="ui sengaacolor right floated aligned big button" href="../customeraccount/account.html">Bearbeiten</a></p>
+						</div>
+					</div>
+
 					<div class="row">
 						<div class="column">
 							<h3>Unternehmen</h3>
 						</div>
 					</div>
-        <div class="row">
-          <div class="column">
-            <p>Name des Unternehmens</p>
-          </div>
-          <div class="column">
-            <div class="ui icon input">
-              <input type="text" placeholder="Name des Unternehmens" disabled>
-            </div>
-          </div>
-        </div>
+					<div class="row">
+						<div class="column">
+							<p>Name des Unternehmens</p>
+						</div>
+					<div class="column">
+							<input type="text" placeholder="Name des Unternehmens" disabled>
+					</div>
+				</div>
         <div class="row">
           <div class="column">
             <p>Sitz des Unternehmens</p>
           </div>
           <div class="column">
-            <div class="ui icon input">
               <input type="text" placeholder="Straße und Hausnummer" disabled>
               <input type="text" placeholder="PLZ und Ort" disabled>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -107,11 +121,26 @@
             <p>Rechnungsadresse</p>
           </div>
           <div class="column">
-            <div class="ui icon input">
               <input type="text" placeholder="Name" disabled>
-              <input type="text" placeholder="Straße und Hausnummer"disabled>
-              <input type="text" placeholder="PLZ und Ort"disabled>
-            </div>
+              <input type="text" placeholder="Straße und Hausnummer" disabled>
+              <input type="text" placeholder="PLZ und Ort" disabled>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <p>URL</p>
+          </div>
+        <div class="column">
+            <input type="text" placeholder="Link zu Ihrer Webseite"disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Logo</p>
+        </div>
+          <div class="column">
+              <input type="text" placeholder="Logo Ihres Unternehmens" disabled>
           </div>
         </div>
 
@@ -126,26 +155,34 @@
                 <p>Anrede</p>
               </div>
               <div class="column">
-              <div class="ui selection dropdown">
-                <input type="hidden" disabled>
-                <div class="default text">Anrede</div>
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                  <div class="item" data-value="0">Männlich</div>
-                  <div class="item" data-value="1">Weiblich</div>
-                  <div class="item" data-value="2">Divers</div>
+                <div class="ui selection dropdown" id="gender_dropdown">
+                  <input type="hidden" disabled>
+                  <div class="default text">Anrede</div>
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="item" data-value="0">Männlich</div>
+                    <div class="item" data-value="1">Weiblich</div>
+                    <div class="item" data-value="2">Divers</div>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
             <div class="row">
               <div class="column">
-                <p>Name</p>
+                <p>Vorame</p>
               </div>
               <div class="column">
-                <input type="text" placeholder="Name des/der AnsprechpartnerIn" disabled>
+                <input type="text" placeholder="Vorname des/der AnsprechpartnerIn" disabled>
               </div>
             </div>
+						<div class="row">
+							<div class="column">
+								<p>Nachname</p>
+							</div>
+							<div class="column">
+								<input type="text" placeholder="Nachname des/der AnsprechpartnerIn" disabled>
+							</div>
+						</div>
             <div class="row">
               <div class="column">
                 <p>E-Mail-Adresse</p>
@@ -163,13 +200,22 @@
               </div>
             </div>
 
-					<div class="row">
-						<div class="column">
-						</div>
+
+						<div class="row">
 							<div class="column">
-								<p><a class="ui grey right floated aligned big button" href="../customeraccount/account.html">Bearbeiten</a></p>
+								<h3>Passwort</h3>
 							</div>
 						</div>
+						<div class="row">
+							<div class="column">
+								<p><a class="ui grey left floated aligned big button" href="../customeraccount/changepassword.html">Passwort ändern</a></p>
+
+							</div>
+								<div class="column">
+								</div>
+							</div>
+
+
 
 
 <!-- ui two column grid		 -->
@@ -179,12 +225,12 @@
 <!-- ui page grid overview segment -->
 </div>
 
-				<!-- <p><a class="ui sengaacolor right labeled icon right floated aligned button" href="../git/Frontend/overview.html">Bestätigen</a></p> -->
 <!-- ui page grid -->
 </div>
 
 </body>
 
-<script src="js/accountcontroller.js"></script>
+<script src="../mainfile/js/header_controller.js"></script>
 
+<!-- <script src="js/accountcontroller.js"></script> -->
 </html>

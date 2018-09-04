@@ -12,6 +12,7 @@
 	<link href='../fonts/googlefont.css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../css/semantic.css">
 	<link rel="stylesheet" type="text/css" href="../css/homepage.css">
+	<!-- <link  rel="import" href="../mainfile/header.html"> -->
 
 	<script src="../js/jquery-2.1.1.min.js"></script>
 	<script src="../js/semantic.js"></script>
@@ -20,47 +21,54 @@
 </head>
 <body id="home">
 
-<div class="ui page main menu large">
-	<img src="../images/Header.jpg" class="center">
-	</img>
-</div>
+	<!-- Header: Picture + Menu -->
+	<div class="ui page main menu large">
+	    <img src="../images/Header.jpg" class="center">
+	  	</img>
 
+	    <div class="ui six item inverted menu">
+				<div class="ui dropdown active item" id="header_dd_start">Startseite
+	    		<i class="dropdown icon"></i>
+	    		<div class="menu">
+	    		<a href="../overview/overview.html" class=" active item">Start</a>
+	    		<a href="#" class="item">Über sengaa</a>
+					<a href="#" class="item">Kontakt</a>
+				</div>
+	     </div>
+			 <div class="ui dropdown item" id="header_dd_challenge">Challenges
+				 <i class="dropdown icon"></i>
+				 <div class="menu">
+				 <a href="#" class="item">Informationen</a>
+				 <a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
+			 </div>
+			</div>
+			<div class="ui dropdown item" id="header_dd_deal">Deals
+				<i class="dropdown icon"></i>
+				<div class="menu">
+				<a href="#" class="item">Informationen</a>
+				<a href="../deal/deal.html" class="item">Buchungsanfrage</a>
+			</div>
+			</div>
+			<div class="ui dropdown item" id="header_dd_event">Events
+				<i class="dropdown icon"></i>
+				<div class="menu">
+				<a href="#" class="item">Informationen</a>
+				<a href="#" class="item">Buchungsanfrage</a>
+				<a href="#" class="item">Vergangene Events</a>
+			</div>
+			</div>
+			 <div class="ui dropdown item" id="header_dd_account">Mein Konto
+				 <i class="dropdown icon"></i>
+				 <div class="menu">
+				 <a href="../customeraccount/accountRO.html" class="item">Meine Kontodaten</a>
+				 <a href="#" class="item">Meine Bestellungen</a>
+				 <a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
+			 </div>
+			</div>
+		 </div>
+	 </div>
 
-<div class="ui five item inverted menu">
-  <a href="../overview/overview.html" class="active item">Startseite</a>
-	<div class="ui dropdown item">Challenges
-		<i class="dropdown icon"></i>
-		<div class="menu">
-		<a href="#" class="item">Informationen</a>
-		<a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
-	</div>
- </div>
- <div class="ui dropdown item">Deals
-	 <i class="dropdown icon"></i>
-	 <div class="menu">
-	 <a href="#" class="item">Informationen</a>
-	 <a href="../deal/deal.html" class="item">Buchungsanfrage</a>
- </div>
- </div>
- <div class="ui dropdown item">Events
-	 <i class="dropdown icon"></i>
-	 <div class="menu">
-	 <a href="#" class="item">Informationen</a>
-	 <a href="#" class="item">Buchungsanfrage</a>
-	 <a href="#" class="item">Vergangene Events</a>
- </div>
- </div>
-	<div class="ui dropdown item">Mein Konto
-		<i class="dropdown icon"></i>
-		<div class="menu">
-		<a href="../customeraccount/accountRO.html" class="item">Meine Kontodaten</a>
-		<a href="#" class="item">Meine Bestellungen</a>
-		<a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
-	</div>
- </div>
-</div>
-
-
+	<!-- Body: Content -->
 	<div class="ui one column center aligned grid">
 		<div class="column">
 			<div class="ui icon header">
@@ -96,6 +104,7 @@
 		</div>
 </div>
 </body>
-<script src="js/overview_controller.js"></script>
+
+<script src="../mainfile/js/header_controller.js"></script>
 
 </html>

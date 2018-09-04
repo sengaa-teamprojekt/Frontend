@@ -20,64 +20,57 @@
 </head>
 <body id="home">
 
-<div class="ui page main menu large">
-	<img src="../images/Header.jpg" class="center">
-	</img>
-</div>
+	<!-- Header: Picture + Menu -->
+	<div class="ui page main menu large">
+	    <img src="../images/Header.jpg" class="center">
+	  	</img>
+
+	    <div class="ui six item inverted menu">
+				<div class="ui dropdown item" id="header_dd_start">Startseite
+	    		<i class="dropdown icon"></i>
+	    		<div class="menu">
+	    		<a href="../overview/overview.html" class="item">Start</a>
+	    		<a href="" class="item">Über sengaa</a>
+					<a href="" class="item">Kontakt</a>
+				</div>
+	     </div>
+			 <div class="ui dropdown item" id="header_dd_challenge">Challenges
+				 <i class="dropdown icon"></i>
+				 <div class="menu">
+				 <a href="#" class="item">Informationen</a>
+				 <a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
+			 </div>
+			</div>
+			<div class="ui dropdown item" id="header_dd_deal">Deals
+				<i class="dropdown icon"></i>
+				<div class="menu">
+				<a href="#" class="item">Informationen</a>
+				<a href="../deal/deal.html" class="item">Buchungsanfrage</a>
+			</div>
+			</div>
+			<div class="ui dropdown item" id="header_dd_event">Events
+				<i class="dropdown icon"></i>
+				<div class="menu">
+				<a href="#" class="item">Informationen</a>
+				<a href="#" class="item">Buchungsanfrage</a>
+				<a href="#" class="item">Vergangene Events</a>
+			</div>
+			</div>
+			 <div class="ui dropdown active item" id="header_dd_account">Mein Konto
+				 <i class="dropdown icon"></i>
+				 <div class="menu">
+				 <a href="../customeraccount/accountRO.html" class="active item">Meine Kontodaten</a>
+				 <a href="#" class="item">Meine Bestellungen</a>
+				 <a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
+			 </div>
+			</div>
+		 </div>
+	 </div>
 
 
-<div class="ui five item inverted menu">
-  <a href="../overview/overview.html" class="item">Startseite</a>
-	<div class="ui dropdown item">Challenges
-		<i class="dropdown icon"></i>
-		<div class="menu">
-		<a href="#" class="item">Informationen</a>
-		<a href="../challenge/challenge.html" class="item">Buchungsanfrage</a>
-	</div>
- </div>
- <div class="ui dropdown item">Deals
-	 <i class="dropdown icon"></i>
-	 <div class="menu">
-	 <a href="#" class="item">Informationen</a>
-	 <a href="../deal/deal.html" class="item">Buchungsanfrage</a>
- </div>
- </div>
- <div class="ui dropdown item">Events
-	 <i class="dropdown icon"></i>
-	 <div class="menu">
-	 <a href="#" class="item">Informationen</a>
-	 <a href="#" class="item">Buchungsanfrage</a>
-	 <a href="#" class="item">Vergangene Events</a>
- </div>
- </div>
-	<div class="ui dropdown active item">Mein Konto
-		<i class="dropdown icon"></i>
-		<div class="menu">
-		<a href="../customeraccount/accountRO.html" class="active item">Meine Kontodaten</a>
-		<a href="#" class="item">Meine Bestellungen</a>
-		<a href="../login/login.html" class="item" onClick="deleteAllCookies()">Abmelden</a>
-	</div>
- </div>
-</div>
-
-
-
+	<!-- Body: Content -->
  <div class="ui page grid">
 	 <div class="ui form">
-
-		<!-- <div class="ui four column grid">
-	   <div class="row">
-			 <div class="column">
-				 <p><a class="ui grey left labeled icon left floated aligned button" href="../overview/overview.html">Zurück <i class="chevron left icon"></i></a></p>
-			 </div>
-	     <div class="column">
-			 </div>
-	     <div class="column">
-			 </div>
-			 <div class="column">
-			 </div>
-		 </div>
-		</div> -->
 
 			<div class="ui one column center aligned grid">
 				<div class="column">
@@ -111,7 +104,7 @@
             <p>Sitz des Unternehmens</p>
           </div>
           <div class="column">
-            <div class="ui icon input">
+            <div class="field">
               <input type="text" placeholder="Straße und Hausnummer">
               <input type="text" placeholder="PLZ und Ort">
             </div>
@@ -122,7 +115,7 @@
             <p>Rechnungsadresse</p>
           </div>
           <div class="column">
-            <div class="ui icon input">
+            <div class="field">
               <input type="text" placeholder="Name">
               <input type="text" placeholder="Straße und Hausnummer">
               <input type="text" placeholder="PLZ und Ort">
@@ -177,12 +170,20 @@
           </div>
             <div class="row">
               <div class="column">
-                <p>Name</p>
+                <p>Vorame</p>
               </div>
               <div class="column">
-                <input type="text" placeholder="Name des/der AnsprechpartnerIn">
+                <input type="text" placeholder="Vorname des/der AnsprechpartnerIn">
               </div>
             </div>
+						<div class="row">
+							<div class="column">
+								<p>Nachname</p>
+							</div>
+							<div class="column">
+								<input type="text" placeholder="Nachname des/der AnsprechpartnerIn">
+							</div>
+						</div>
             <div class="row">
               <div class="column">
                 <p>E-Mail-Adresse</p>
@@ -199,6 +200,23 @@
                 <input type="text" placeholder="Telefonnummer">
               </div>
             </div>
+
+
+						<div class="row">
+							<div class="column">
+								<h3>Passwort</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<p><a class="ui grey left floated aligned big button" href="../customeraccount/changepassword.html">Passwort ändern</a></p>
+
+							</div>
+								<div class="column">
+								</div>
+							</div>
+
+
 
 					<div class="row">
 						<div class="column">
@@ -220,5 +238,6 @@
 </div>
 
 </body>
+<script src="../mainfile/js/header_controller.js"></script>
 <script src="js/accountcontroller.js"></script>
 </html>
