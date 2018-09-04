@@ -74,14 +74,14 @@
 			<div class="ui one column center aligned grid">
 				<div class="column">
 					<div class="ui icon header">
-						<h1>Challenge</h1>
+						<h1>Challenges</h1>
 						<img src="../images/challenge2.png" height="150" width="150">
 					</div>
 				</div>
 			</div>
 
 	<div class="ui page grid overview segment">
-		<div class="ui form">
+		<!-- <div class="ui form"> -->
 
 				<div class="ui two column grid">
 					<div class="row">
@@ -91,11 +91,32 @@
 					</div>
 					<div class="row">
 						<div class="column">
+							<p>Welche Art von Challenge möchten Sie anlegen?</p>
+						</div>
+					<div class="column">
+						<div class="inline field">
+							<div class="field">
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>Single-Challenge</label>
+								</div>
+							</div>
+							<div class="field">
+								<div class="ui radio checkbox">
+									<input type="radio">
+									<label>Teamchallenge</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="row">
+						<div class="column">
 							<p>Titel</p>
 						</div>
 					<div class="column">
 						<div class="field">
-							<input type="text" placeholder="Name der Challenge" autofocus>
+							<input type="text" placeholder="Name der Challenge">
 						</div>
 					</div>
 				</div>
@@ -105,6 +126,23 @@
 					</div>
 					<div class="column">
 						<textarea placeholder="Kurzbeschreibung der Challenge" maxlength="200"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<p>Häufigkeit</p>
+					</div>
+					<div class="column">
+						<div class="ui selection dropdown" id="frequency_dd">
+							<input type="hidden">
+							<div class="default text">Häufigkeit der Challenge</div>
+							<i class="dropdown icon"></i>
+							<div class="menu">
+								<div class="item" data-value="0">Single (1x)</div>
+								<div class="item" data-value="1">Kampagne (3x)</div>
+								<div class="item" data-value="2">Jahresabo (12x)</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -127,30 +165,81 @@
 						</div>
 						<div class="row">
 							<div class="column">
-								<p>Titel</p>
+								<div class="ui checkbox">
+									<input type="checkbox" checked="checked">
+									<label>1. Platz</label>
+								</div>
 							</div>
 						<div class="column">
 							<div class="field">
-								<input type="text" placeholder="Name des Preises">
+								<input type="text" placeholder="Preis">
 							</div>
 						</div>
 					</div>
-					<div class="row">
+						<div class="row">
+							<div class="column">
+								<div class="ui checkbox">
+									<input type="checkbox">
+									<label>2. Platz</label>
+								</div>
+							</div>
 						<div class="column">
-							<p>Beschreibung</p>
+							<div class="field">
+								<input type="text" placeholder="Preis" disabled>
+							</div>
 						</div>
+					</div>
+						<div class="row">
+							<div class="column">
+								<div class="ui checkbox">
+									<input type="checkbox">
+									<label>3. Platz</label>
+								</div>
+							</div>
 						<div class="column">
-							<textarea placeholder="Beschreibung der Preiskategorien"></textarea>
+							<div class="field">
+								<input type="text" placeholder="Preis" disabled>
+							</div>
+						</div>
+					</div>
+						<div class="row">
+							<div class="column">
+								<div class="ui checkbox">
+									<input type="checkbox">
+									<label>Preis für alle Teilnehmer</label>
+								</div>							</div>
+						<div class="column">
+							<div class="field">
+								<input type="text" placeholder="Bsp.: 10%-Coupon für den nächsten Einkauf" disabled>
+							</div>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="column">
+							<h3>Unternehmen</h3>
 						</div>
-							<div class="column">
-								<p><a class="ui sengaacolor right floated aligned big button" href="../website/confirmation.html">Bestätigen</a></p>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="ui checkbox">
+								<input type="checkbox" checked="checked">
+								<label>Stammdaten aus meinem Konto übernehmen</label>
 							</div>
 						</div>
+				</div>
+
+
+					<div class="row">
+						<div class="column">
+						</div>
+							<div class="column">
+								<p><a class="ui sengaacolor right floated aligned big button" href="../website/payment.html">Weiter</a></p>
+							</div>
+						</div>
+
+
+
 
 <!-- ui two column grid		 -->
 </div>
