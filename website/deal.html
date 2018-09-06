@@ -31,7 +31,7 @@
 	    		<div class="menu">
 	    		<a href="../website/overview.html" class="item">Start</a>
 	    		<a href="#" class="item">Über sengaa</a>
-					<a href="#" class="item">Kontakt</a>
+					<a href="../website/contact.html" class="item">Kontakt</a>
 				</div>
 	     </div>
 			 <div class="ui dropdown item" id="header_dd_challenge">Challenges
@@ -87,6 +87,11 @@
 				<div class="ui two column grid">
 					<div class="row">
 						<div class="column">
+							<h3>Deal</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
 							<p>Titel</p>
 						</div>
 					<div class="column">
@@ -95,27 +100,39 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="row">
 					<div class="column">
-						<p>Beschreibung</p>
+						<p>Dauer</p>
 					</div>
 					<div class="column">
-						<textarea placeholder="Kurzbeschreibung des Deals"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="column">
-						<p>Zeitraum</p>
-					</div>
-					<div class="column">
-						<div class="ui icon input">
-							<i class="calendar alternate outline icon"></i>
-							<input type="text" placeholder="Von - Bis">
+						<div class="ui selection dropdown" id="frequency_dd">
+							<input type="hidden">
+							<div class="default text">Dauer des Deals</div>
+							<i class="dropdown icon"></i>
+							<div class="menu">
+								<div class="item" data-value="0">1 Monat</div>
+								<div class="item" data-value="1">3 Monate</div>
+								<div class="item" data-value="2">6 Monate</div>
+								<div class="item" data-value="2">12 Monate</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
-			<div class="row">
+				<div class="row">
+					<div class="column">
+						<p>Zeitraum ab</p>
+					</div>
+					<div class="column">
+						<div class="ui icon input">
+							<i class="calendar alternate outline icon"></i>
+							<input type="text" placeholder="Ab">
+						</div>
+					</div>
+				</div>
+
+			<!-- <div class="row">
 				<div class="column">
 					<p>Titelbild</p>
 				</div>
@@ -133,8 +150,21 @@
 						<div class="column">
 							<p><a class="ui grey left labeled icon left button" href="#">Titelbild hochladen <i class="upload icon"></i></a></p>
 						</div>
-					</div>
+					</div> -->
 
+					<div class="row">
+						<div class="column">
+							<h3>Unternehmen</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="ui checkbox">
+								<input type="checkbox" checked="checked">
+								<label>Stammdaten aus meinem Konto übernehmen</label>
+							</div>
+						</div>
+				</div>
 					<div class="row">
 					</div>
 
@@ -142,7 +172,7 @@
 						<div class="column">
 						</div>
 							<div class="column">
-								<p><a class="ui sengaacolor right floated aligned big button" href="../website/confirmation.html">Bestätigen</a></p>
+								<p><a class="ui sengaacolor right floated aligned big button" href="../website/payment.html">Weiter</a></p>
 							</div>
 						</div>
 
