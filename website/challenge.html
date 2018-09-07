@@ -81,8 +81,6 @@
 			</div>
 
 	<div class="ui page grid overview segment">
-		<!-- <div class="ui form"> -->
-
 				<div class="ui two column grid">
 					<div class="row">
 						<div class="column">
@@ -94,18 +92,20 @@
 							<p>Welche Art von Challenge möchten Sie anlegen?</p>
 						</div>
 					<div class="column">
+						<div class="grouped fields">
 							<div class="field">
 								<div class="ui radio checkbox">
-									<input type="radio">
+									<input type="radio" name="rb">
 									<label>Single-Challenge</label>
 								</div>
 							</div>
 							<div class="field">
 								<div class="ui radio checkbox">
-									<input type="radio">
+									<input type="radio" name="rb">
 									<label>Teamchallenge</label>
 								</div>
 							</div>
+						</div>
 					</div>
 				</div>
 					<div class="row">
@@ -164,51 +164,51 @@
 						<div class="row">
 							<div class="column">
 								<div class="ui checkbox">
-									<input type="checkbox" checked="checked">
+									<input type="checkbox" checked="checked" id="cb_preiseins">
 									<label>1. Platz</label>
 								</div>
 							</div>
 						<div class="column">
 							<div class="field">
-								<input type="text" placeholder="Preis">
+								<input type="text" placeholder="Preis" id="preiseins">
 							</div>
 						</div>
 					</div>
 						<div class="row">
 							<div class="column">
 								<div class="ui checkbox">
-									<input type="checkbox">
+									<input type="checkbox" id="cb_preiszwei">
 									<label>2. Platz</label>
 								</div>
 							</div>
 						<div class="column">
 							<div class="field">
-								<input type="text" placeholder="Preis" disabled>
+								<input type="text" placeholder="Preis" disabled id="preiszwei">
 							</div>
 						</div>
 					</div>
 						<div class="row">
 							<div class="column">
 								<div class="ui checkbox">
-									<input type="checkbox">
+									<input type="checkbox" id="cb_preisdrei">
 									<label>3. Platz</label>
 								</div>
 							</div>
 						<div class="column">
 							<div class="field">
-								<input type="text" placeholder="Preis" disabled>
+								<input type="text" placeholder="Preis" disabled id="preisdrei">
 							</div>
 						</div>
 					</div>
 						<div class="row">
 							<div class="column">
 								<div class="ui checkbox">
-									<input type="checkbox">
+									<input type="checkbox" id="cb_preisalle">
 									<label>Preis für alle Teilnehmer</label>
 								</div>							</div>
 						<div class="column">
 							<div class="field">
-								<input type="text" placeholder="Bsp.: 10%-Coupon für den nächsten Einkauf" disabled>
+								<input type="text" placeholder="Bsp.: 10%-Coupon für den nächsten Einkauf" disabled id="preisalle">
 							</div>
 						</div>
 					</div>
